@@ -60,3 +60,19 @@ function reverseArray(array)
   
   // Example
   console.log(reverseArray(["A", "B", "C"])); // outputs ["C", "B", "A"]
+
+  //reverse Array
+function reverseArrayInPlace(array) 
+{
+    for (let i = 0; i < Math.floor(array.length / 2); i++) 
+        {
+      let temp = array[i];
+      array[i] = array[array.length - 1 - i];
+      array[array.length - 1 - i] = temp;
+    }
+    return array; // returning the same array for reference
+  }
+  // Example usage
+  let arrayValue = [1, 2, 3, 4, 5];
+  reverseArrayInPlace(arrayValue);
+  console.log(arrayValue); // outputs 5, 4, 3, 2, 1
