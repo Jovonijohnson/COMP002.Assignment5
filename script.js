@@ -48,6 +48,8 @@ console.log(sum(range(1, 10))); // returns 55
 // reverseArrayInPlace(arrayValue);
 // console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
 
+
+//The original array remains unchanged.
 function reverseArray(array)
  {
     let newArray = [];
@@ -61,7 +63,7 @@ function reverseArray(array)
   // Example
   console.log(reverseArray(["A", "B", "C"])); // outputs ["C", "B", "A"]
 
-  //reverse Array
+  //Modifies the original array and No new array was created.
 function reverseArrayInPlace(array) 
 {
     for (let i = 0; i < Math.floor(array.length / 2); i++) 
