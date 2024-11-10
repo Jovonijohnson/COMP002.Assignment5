@@ -3,6 +3,18 @@
 // Example output:
 // console.log(range(1, 10)); // outputs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+function range(start, end) 
+{
+    let array = [];
+    for (let i = start; i <= end; i++)
+         {
+      array.push(i);
+    }
+    return array;
+  }
+  
+  // Example usage
+  console.log(range(1, 10)); // outputs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
