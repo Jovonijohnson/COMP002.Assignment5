@@ -70,7 +70,7 @@ function reverseArrayInPlace(array)
       array[i] = array[array.length - 1 - i];
       array[array.length - 1 - i] = temp;
     }
-    return array; // returning the same array for reference
+    return array; // returning same array for reference
   }
   // Example usage
   let arrayValue = [1, 2, 3, 4, 5];
